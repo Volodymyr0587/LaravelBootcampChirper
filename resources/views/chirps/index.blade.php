@@ -29,6 +29,8 @@
                 </div>
             @endforeach
         </div>
-        {{ $chirps->links() }}
+        <div class="p-6">
+            {{ $chirps->links() }}
+        </div>
     </div>
 </x-app-layout>

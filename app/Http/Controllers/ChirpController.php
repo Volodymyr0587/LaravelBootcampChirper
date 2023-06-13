@@ -16,7 +16,7 @@ class ChirpController extends Controller
     public function index(): View
     {
         return view('chirps.index', [
-            'chirps' => Chirp::with('user')->paginate(2),
+            'chirps' => Chirp::with('user')->paginate(3),
         ]);
     }
 
